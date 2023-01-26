@@ -6,6 +6,7 @@ on:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
+    environment: waka
     steps:
       - uses: actions/checkout@master
       - name: Update gist
