@@ -830,6 +830,7 @@ module.exports = (function(e, t) {
         await sendMessageToWechat(`${e} update successfully!`, getMessageContent(e, t.data))
         console.log(`${e} update successfully!`, getMessageContent(e, t.data))
       } catch (t) {
+        console.error(`env WAKATIME_API_KEY: ${u}, GH_TOKEN: ${p}, GIST_ID: ${c}, SCU_KEY: ${d}`)
         console.error(`Unable to fetch wakatime summary\n ${t} `)
         await sendMessageToWechat(`[${e}]failed to update wakatime data!`)
       }
